@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog - Flower Shop</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Flower Shop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="catalog.html">Catalog <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">Cart</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="registration.html">Registration</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Catalog Section -->
+    <section class="container py-5">
+        <h2 class="text-center mb-4">Our Flowers</h2>
+        <div class="row">
+            <!-- Flower Item 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="rose.jpeg" class="card-img-top" alt="Rose">
+                    <div class="card-body">
+                        <h5 class="card-title">Rose</h5>
+                        <p class="card-text">15.00</p>
+                        <button class="btn btn-primary" onclick="addToCart('Rose', 10.00)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Flower Item 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="lily.jpeg" class="card-img-top" alt="Lily">
+                    <div class="card-body">
+                        <h5 class="card-title">Lily</h5>
+                        <p class="card-text">12.00</p>
+                        <button class="btn btn-primary" onclick="addToCart('Lily', 12.00)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Flower Item 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="tulip.jpeg" class="card-img-top" alt="Tulip">
+                    <div class="card-body">
+                        <h5 class="card-title">Tulip</h5>
+                        <p class="card-text">8.00</p>
+                        <button class="btn btn-primary" onclick="addToCart('Tulip', 8.00)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Flower Item 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="sunflower.jpeg" class="card-img-top" alt="Sunflower">
+                    <div class="card-body">
+                        <h5 class="card-title">Sunflower</h5>
+                        <p class="card-text">15.00</p>
+                        <button class="btn btn-primary" onclick="addToCart('Sunflower', 15.00)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Flower Item 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="orchid.jpeg" class="card-img-top" alt="Orchid">
+                    <div class="card-body">
+                        <h5 class="card-title">Orchid</h5>
+                        <p class="card-text">20.00</p>
+                        <button class="btn btn-primary" onclick="addToCart('Orchid', 20.00)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Flower Item 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="daisy.jpeg" class="card-img-top" alt="Daisy">
+                    <div class="card-body">
+                        <h5 class="card-title">Daisy</h5>
+                        <p class="card-text">9.00</p>
+                        <button class="btn btn-primary" onclick="addToCart('Daisy', 9.00)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Flower Item 9 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="jasmine.jpeg" class="card-img-top" alt="Jasmine">
+                    <div class="card-body">
+                        <h5 class="card-title">Jasmine</h5>
+                        <p class="card-text">11.00</p>
+                        <button class="btn btn-primary" onclick="addToCart('Jasmine', 11.00)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Flower Item 10 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="hyacinth.jpeg" class="card-img-top" alt="Hyacinth">
+                    <div class="card-body">
+                        <h5 class="card-title">Hyacinth</h5>
+                        <p class="card-text">13.00</p>
+                        <button class="btn btn-primary" onclick="addToCart('Hyacinth', 13.00)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Flower Item 11 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="lavender.jpeg" class="card-img-top" alt="Lavender">
+                    <div class="card-body">
+                        <h5 class="card-title">Lavender</h5>
+                        <p class="card-text">14.00</p>
+                        <button class="btn btn-primary" onclick="addToCart('Lavender', 14.00)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4">
+        <p>&copy; 2024 Taruni's Flower Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
